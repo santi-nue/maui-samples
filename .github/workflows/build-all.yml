@@ -23,7 +23,7 @@ jobs:
         dotnet-version: 8.0
 
     - name: Install .NET MAUI Workload
-      run: dotnet workload install maui
+      run: dotnet workload install maui-android
       # if: runner.os == 'macOS' # reenable when .NET 8 is default on hosted runners
       
     - name: Find and build all C# projects
@@ -58,9 +58,9 @@ jobs:
                 Write-Output "::group:: Building $csproj"
         
   
-                if ($csproj -contains "WeatherTwentyOne") 
+                if ($csproj -contains "WeatherTwentyOne") {
                    dotnet build $csproj
-
+                } 
 
                    
         
