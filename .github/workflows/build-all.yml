@@ -1,7 +1,7 @@
 name: Build All C# Projects in Repo
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
