@@ -4,9 +4,8 @@
 
 <PropertyGroup>
   <TargetFrameworks>net8.0-android</TargetFrameworks>
-  <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">28.0</SupportedOSPlatformVersion>
-  <TargetPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">28.0</TargetPlatformVersion>
-  
+
+<RuntimeIdentifiers>android-arm</RuntimeIdentifiers>
 
  <!-- Note for MacCatalyst:
 		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
