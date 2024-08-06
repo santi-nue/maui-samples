@@ -95,4 +95,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
           name: result
-          path:  D:/a/maui-samples/maui-samples/8.0/Apps/GameOfLife/src/GameOfLife/bin/Debug/net8.0-android/
+          path:  D:/a/maui-samples/maui-samples/8.0/Apps/GameOfLife/GameOfLife/bin/Debug/net8.0-android/
