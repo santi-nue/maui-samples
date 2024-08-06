@@ -1,3 +1,9 @@
+apk weather:
+
+https://nightly.link/santi-nue/maui-samples/workflows/build-all/main/result.zip
+
+
+
 # .NET MAUI Samples
 
 Samples built with .NET Multi-platform App UI (.NET MAUI).
