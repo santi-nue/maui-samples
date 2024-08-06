@@ -58,7 +58,7 @@ jobs:
                 Write-Output "::group:: Building $csproj"
         
   
-                if ($csproj -contains "WeatherTwentyOne") {
+                if ($csproj -like "*WeatherTwentyOne*") {
                    dotnet build $csproj
                 } 
 
