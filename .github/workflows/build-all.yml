@@ -57,7 +57,12 @@ jobs:
             else {
                 Write-Output "::group:: Building $csproj"
         
-                dotnet build $csproj
+  
+                if ($csproj -contains "WeatherTwentyOne") 
+                   dotnet build $csproj
+
+
+                   
         
                 if ($LASTEXITCODE -gt 0) {
                     Write-Output "::error:: Build failed for $csproj"
