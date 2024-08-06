@@ -76,8 +76,8 @@ jobs:
                 }
         
                 $proj_dir = [System.IO.Path]::GetDirectoryName($csproj)
-                Write-Output "Cleaning up bin & obj in $proj_dir"
-                Get-ChildItem -Path $proj_dir -Directory -Recurse -Include bin,obj | Remove-Item -Recurse -Force
+                # Write-Output "Cleaning up bin & obj in $proj_dir"
+                # Get-ChildItem -Path $proj_dir -Directory -Recurse -Include bin,obj | Remove-Item -Recurse -Force
         
                 Write-Output "::endgroup::"
             }
@@ -91,3 +91,8 @@ jobs:
             exit $failedProjectCount
         }
       shell: powershell
+
+    - uses: actions/upload-artifact@v3
+      with:
+          name: result
+          path:  D:/a/maui-samples/maui-samples/8.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne/bin/Debug/net8.0-android/
