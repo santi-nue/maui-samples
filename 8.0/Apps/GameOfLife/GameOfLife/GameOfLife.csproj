@@ -19,7 +19,7 @@
 		<Nullable>enable</Nullable>
 
 
-
+               <OutputType>Exe</OutputType>
 
 		<!-- Display name -->
 		<ApplicationTitle>GameOfLife</ApplicationTitle>
